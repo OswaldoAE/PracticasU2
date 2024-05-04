@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href=""
+    rel="stylesheet"
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Guardar Teclas Presionadas</h1>
+        <form id="keyFrom">
+            <div for="form-group">
+                <label for="pressedKeys">Teclas Presionadas:</label>
+                <input type="password" class="form-control"
+                id="pressedKeys" name="pressedKeys"/>
+                <label for="lblPressedKeys" id="lblPressedKeys"></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script>
+        function captureKeys(evente){
+            var pressedKeysInput = document.getElementById("pressedKeys");
+            var muestra = document.getElementById("lblPressedKeys");
+            var pressedKeys = [];
+            var key = event.key;
+
+            muestra.innerHTML +=key;
+            pressedKeys.push(key);
+            pressedKeysInput.value = pressedKeys;
+        }
+        document.getElementById("keyForm").addEventListener("submit", function (event){
+            event.preventDefault();
+
+            var pressedKeysInput = document.getElementById("pressedKeys");
+            alert("Teclas presionadas: " + pressedKeysInput.value);
+        });
+    </script>
+</body>
+</html>

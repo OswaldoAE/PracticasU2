@@ -1,0 +1,56 @@
+html{
+  background-color: aquamarine;
+  
+
+}
+  /* Estilos para el contenedor del slider */
+  .slider-container {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Estilos para las imágenes del slider */
+  .slider-img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border: 5px solid black;
+    border-radius: 20px;
+  }
+  
+  /* Estilos para el texto en el lado derecho */
+  .slider-text {
+    position:fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(255, 51, 230, 0.5);
+    color: #ffffff;
+    padding: 100px;
+    max-width: 180px;
+    border: 5px solid whitesmoke;
+    margin-right: 10px;
+    animation:slide-down 0.5s ease;
+  }
+  
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+
+  }
+  
+}
+
+@keyframes slide-down {
+  from{
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

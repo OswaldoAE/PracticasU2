@@ -1,0 +1,120 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: blue;
+}
+
+.TituloPrincipal {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(240, 237, 237);
+}
+
+.ButtonContainer{
+    padding: 100px;
+    display: flex;
+    gap: 650px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ButtonContainer button{
+    width: 250px;
+    height: 65px;
+    background-color: aqua;
+    color: black;
+    border: 1px solid #00c8c8;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.GeneralContainer{
+    padding: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GeneralContainer div{
+    background-color: black;
+    border: 1px solid #1DB954;
+}
+
+.GeneralContainer img{
+    transition: all 1ms ease-in-out;
+}
+
+.alert-initial{
+    display: block;
+    position: absolute;
+    left: 700px;
+    top: 390px;
+    color: white;
+    background: url("img.png");
+    font-size: 80px;
+    animation: twinkle 0.4s infinite alternate;
+}
+
+.alert-final{
+    display: none;
+}
+
+.voltear-carta{
+    animation: rotation1 2s none linear;
+}
+
+.imglec{
+    animation: twinkle 0.4s infinite alternate;
+    filter: blur(5px);
+}
+
+.Alert-win {
+    display: none;
+}
+
+.alert-win-display {
+    display: block;
+    position: absolute;
+    left: 620px;
+    top: 300px;
+    color: #D8F82F;
+    background: url("img.png");
+    font-size: 150px;
+    animation: twinkle 0.4s infinite alternate;
+
+}
+
+@keyframes twinkle {
+    0%{
+        opacity: .0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.rotate {
+    animation: rotation 2s none linear;
+    transform: perspective(660px) rotateY(360deg);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(270deg);
+    }
+    to{
+        transform: rotateY(300deg);
+    }
+}
+
+@keyframes rotation1 {
+    from {
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(270deg);
+    }
+}
