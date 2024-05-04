@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--informa al navegador qué versión de HTML se usó para escribir el documento-->
+<html lang="es"> <!--especifica el idioma natural del contenido de una página web-->
+<head> <!--es la primera de las dos partes en que se estructura un documento HTML-->
+    <meta charset="UTF-8"> <!--los navegadores y los motores de búsqueda interpreten correctamente el contenido de la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--definir qué área de pantalla está disponible-->
+    <title>Programación web</title> <!--permite darle un título a una página web-->
+</head>
+<body> 
+<form id="myForm"> <!--indica la página a la que se envían los datos del formulario-->
+    <label for="nombre">Nombre:</label><br> <!--vincular la etiqueta directamente al campo de entrada-->
+    <input type="text" id="nombre" name="nombre" required><br><br> <!--se usa para crear controles interactivos-->
+
+    <label for="apellido">Apellidos:</label><br> <!--vincular la etiqueta directamente al campo de entrada-->
+    <input type="text" id="nombre" name="nombre" required><br><br> <!--se usa para crear controles interactivos-->
+
+
+    <label for="email">Correo Electrónico:</label><br> <!--vincular la etiqueta directamente al campo de entrada-->
+    <input type="email" id="email" name="email" required><br><br> <!--se usa para crear controles interactivos-->
+
+    
+    <label for="direccion">registro federal de contribuyentes:</label><br> <!--vincular la etiqueta directamente al campo de entrada-->
+    <textarea id="direccion" name="direccion" required></textarea><br><br> <!--permite crear un cuadro de texto de varias líneas-->
+
+    
+    <input type="submit" value="Guardar Datos"> <!--se usa para crear controles interactivos-->
+    <input type="submit" value="Guardar como PDF" onclick="generatePDF()"/>
+
+</form> <!--define formalmente un formulario-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="./script.js"></script>
+
+
+    
+<footer> <!--Un pie de página-->
+</footer> <!--Un pie de página-->
+</body> <!-- se cierra cuerpo del contenido-->
+</html> <!--fin del documento-->

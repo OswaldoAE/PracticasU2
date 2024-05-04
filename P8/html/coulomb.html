@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Coulomb</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <div class="rounded container border border-warning">
+                <h2>Calcular Vacio:</h2>
+                <form action="" id="vacio">
+                    <label for="consPro">Valor de la Constante Proporcionalidad</label>
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="consPro"
+                    required
+                    /><br /><br />
+                    <label for="carga1">Valor de la 1era carga</label>
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="carga1"
+                    required
+                    /><br /><br />
+                    <label for="corga2">Valor de la 2da Carga</label>
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="carga2"
+                    required
+                    /><br /><br />
+                    <label for="distancia">Valor de la Distancia</label><br />
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="distancia"
+                    required
+                    /><br />
+                    <label for="resultado" id="lblResultado">...</label>
+                    <br />
+                    <input
+                    type="button"
+                    value="Calcular"
+                    class="btn-warning"
+                    onclick="calcularVacio()"
+                    />
+                </form>
+                <br />
+            </div>
+            <br />
+            <div class="rounded container border border-primary">
+                <h2>Calcular Fuerza Electrostatica:</h2>
+                    <form action="" id="vacio">
+                        <label for="va">Valor de la Fuerza</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="va"
+                        required
+                        /><br /><br />
+                        <label for="distancia">Valor de la Distancia</label><br />
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="distancia"
+                        required
+                        /><br />
+                        <label for="consPro">Valor de la Constante Proporcionalidad</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="consPro"
+                        required
+                        /><br /><br />
+                        <label for="corga2">Valor de la 2da Carga</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="carga2"
+                        required
+                        /><br /><br />
+                        <label for="resultado" id="lblResultado">...</label>
+                        <br />
+                        <input
+                        type="button"
+                        value="Calcular"
+                        class="btn-warning"
+                        onclick="calcularFuerzaElectrostatica()"/>
+                    </form>
+                    <br />
+                </div>
+                <br />
+
+                <div class="rounded container border border-warning">
+                    <h2>Calcular Medio:</h2>
+                    <form action="" id="vacio">
+                        <label for="consPro">Valor de la Constante Proporcionalidad</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="consPro"
+                        required
+                        /><br /><br />
+                        <label for="carga1">Valor de la 1era carga</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="carga1"
+                        required
+                        /><br /><br />
+                        <label for="corga2">Valor de la 2da Carga</label>
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="carga2"
+                        required
+                        /><br /><br />
+                        <label for="relativa">Relativa</label><br />
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="relativa"
+                        required
+                        /><br />
+                        <label for="distancia">Valor de la Distancia</label><br />
+                        <input
+                        type="number"
+                        placeholder="solo valores numericos"
+                        id="distancia"
+                        required
+                        /><br />
+                        <label for="resultado" id="lblResultado">...</label>
+                        <br />
+                        <input
+                        type="button"
+                        value="Calcular"
+                        class="btn-warning"
+                        onclick="calcularMedio()"
+                        />
+                    </form>
+                    <br />
+                </div>
+                <br />
+                <script src="../Script/coulomb.js">x</script>
+
+        
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+</body>
+</html>

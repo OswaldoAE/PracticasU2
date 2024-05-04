@@ -1,0 +1,36 @@
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.cards {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-face {
+    transform: rotateY(180deg);
+}
