@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="en"> <!-- Inicio del elemento HTML con atributo de idioma en inglés -->
+
+<head> <!-- Inicio de la sección de encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Definición de la codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista del dispositivo -->
+    <title>Pe2</title> <!-- Título de la página -->
+</head> <!-- Fin de la sección de encabezado -->
+<body> <!-- Inicio del cuerpo del documento HTML -->
+    <h2>OFDJMAIASDJASODAS</h2> <!-- Encabezado de nivel 2 -->
+    <h3>Cambia elementos pero también atributos</h3> <!-- Encabezado de nivel 3 -->
+    <p>Vamos a cambiar el atributo</p> <!-- Párrafo -->
+    <button onclick="document.getElementById('myImage').src='imgs/pic_bulbon.gif'"> <!-- Botón para encender el foco con función JavaScript -->
+        Encender foco
+    </button>
+    <center> <!-- Elemento para centrar contenido (obsoleto en HTML5, se recomienda CSS para el centrado) -->
+        <img src="./imgs/pic_bulboff.gif" id="myImage" alt="" id="myImage"> <!-- Imagen del foco con ID 'myImage' -->
+    </center>
+    <button id="off" onclick="cambiarColorFondo()">Cambiar color de fondo</button> <!-- Botón para cambiar el color de fondo con función JavaScript -->
+
+<script>
+  function cambiarColorFondo() {
+    // Seleccionamos el elemento body
+    var cuerpo = document.body;
+    
+    // Cambiamos el color de fondo a negro
+    cuerpo.style.backgroundColor = "black";
+  }
+</script> <!-- Script de JavaScript para cambiar el color de fondo -->
+
+</body> <!-- Fin del cuerpo del documento HTML -->
+</html> <!-- Fin del documento HTML -->

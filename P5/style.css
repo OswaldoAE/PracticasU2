@@ -1,0 +1,8 @@
+.canvas {
+    display: block; /* Hace que el elemento sea un bloque */
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    margin-right: auto; /* Margen derecho automático para centrar horizontalmente */
+    width: max-content; /* Establece el ancho del elemento al contenido máximo */
+    font-size: 100px; /* Tamaño de fuente de 100px */
+}
+s

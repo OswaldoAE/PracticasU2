@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con atributo de idioma en español -->
+
+<head> <!-- Inicio de la sección de encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Definición de la codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista del dispositivo -->
+    <title>PRACT 3</title> <!-- Título de la página -->
+</head> <!-- Fin de la sección de encabezado -->
+
+<body> <!-- Inicio del cuerpo del documento HTML -->
+    <h2>Cambia estilo</h2> <!-- Encabezado de nivel 2 -->
+    <p id="demo">Modificado desde JS</p> <!-- Párrafo con identificador 'demo' -->
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+        Cambiar tamaño del párrafo
+    </button> <!-- Botón para cambiar el tamaño del párrafo mediante JavaScript -->
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">
+        Ocultarlo
+    </button> <!-- Botón para ocultar el párrafo mediante JavaScript -->
+    <h3 id="resultado">El resultado es</h3> <!-- Encabezado de nivel 3 con identificador 'resultado' -->
+    <button onclick="document.getElementById('resultado').innerHTML=suma">
+        Resultado
+    </button> <!-- Botón para mostrar el resultado de la suma mediante JavaScript -->
+    <script>
+        let x=6.69; 
+        let y=40.174 
+        let suma=x+y; 
+    </script> <!-- Script de JavaScript para calcular la suma -->
+</body> <!-- Fin del cuerpo del documento HTML -->
+</html> <!-- Fin del documento HTML -->

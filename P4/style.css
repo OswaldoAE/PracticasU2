@@ -1,0 +1,53 @@
+.card {
+    width: 300px; /* Ancho de la tarjeta */
+    height: 300px; /* Altura de la tarjeta */
+    position: relative; /* Posición relativa para contener el contenido */
+    perspective: 1000px; /* Perspectiva para el efecto de 3D */
+    margin: 10px; /* Margen externo de la tarjeta */
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    margin-right: auto; /* Margen derecho automático para centrar horizontalmente */
+}
+
+.card-content {
+    width: 100%; /* Ancho del contenido de la tarjeta */
+    height: 100%; /* Altura del contenido de la tarjeta */
+    position: absolute; /* Posición absoluta para permitir la rotación */
+    transform-style: preserve-3d; /* Estilo de transformación 3D */
+    transition: transform 1s; /* Transición suave de 1 segundo al transformar */
+}
+
+.card.flipped .card-content {
+    transform: rotateY(180deg); /* Rotación de 180 grados en el eje Y al aplicar la clase "flipped" */
+}
+
+.card-face {
+    width: 100%; /* Ancho de la cara de la tarjeta */
+    height: 100%; /* Altura de la cara de la tarjeta */
+    position: absolute; /* Posición absoluta para el posicionamiento */
+    backface-visibility: hidden; /* Ocultar la cara trasera cuando se gire la tarjeta */
+}
+
+.card-front {
+    background: url(./imgs/CAMARA.jpg); /* Fondo de la cara frontal con una imagen de una cámara */
+    background-size: cover; /* Ajustar la imagen al tamaño de la tarjeta */
+}
+
+.card-front2 {
+    background: url(./imgs/gato.jpg); /* Fondo de la segunda cara frontal con una imagen de un gato */
+    background-size: cover; /* Ajustar la imagen al tamaño de la tarjeta */
+}
+
+.card-front3 {
+    background: url(./imgs/IMGONE.jpg); /* Fondo de la tercera cara frontal con una imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño de la tarjeta */
+}
+
+.card-back {
+    background: rgb(152, 197, 232); /* Fondo de la cara trasera */
+    transform: rotateY(180deg); /* Rotación inicial de 180 grados en el eje Y para ocultar la cara trasera */
+    display: flex; /* Utilizar el modelo de caja flexible */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+

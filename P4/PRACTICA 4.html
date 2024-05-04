@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="en"> <!-- Inicio del elemento HTML con atributo de idioma en inglés -->
+
+<head> <!-- Inicio de la sección de encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Definición de la codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista del dispositivo -->
+    <title>Pract 4</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="./style.css"> <!-- Enlace al archivo de hoja de estilos externo -->
+</head> <!-- Fin de la sección de encabezado -->
+
+<body> <!-- Inicio del cuerpo del documento HTML -->
+    <div class="card"> <!-- Div contenedor de una tarjeta -->
+        <div class="card-content"> <!-- Div contenedor del contenido de la tarjeta -->
+            <div class="card-face card-front"></div> <!-- Div para la cara frontal de la tarjeta -->
+            <div class="card-face card-back">IMAGEN 1</div> <!-- Div para la cara trasera de la tarjeta con texto "IMAGEN 1" -->
+        </div>
+    </div> <!-- Fin de la tarjeta -->
+
+    <div class="card"> <!-- Segunda tarjeta -->
+        <div class="card-content"> <!-- Contenido de la segunda tarjeta -->
+            <div class="card-face card-front2"></div> <!-- Cara frontal de la segunda tarjeta -->
+            <div class="card-face card-back">IMAGEN 2 </div> <!-- Cara trasera de la segunda tarjeta con texto "IMAGEN 2" -->
+        </div>
+    </div> <!-- Fin de la segunda tarjeta -->
+
+    <div class="card"> <!-- Tercera tarjeta -->
+        <div class="card-content"> <!-- Contenido de la tercera tarjeta -->
+            <div class="card-face card-front3"></div> <!-- Cara frontal de la tercera tarjeta -->
+            <div class="card-face card-back">IMAGEN 3</div> <!-- Cara trasera de la tercera tarjeta con texto "IMAGEN 3" -->
+        </div>
+    </div> <!-- Fin de la tercera tarjeta -->
+
+    <script> <!-- Inicio del script de JavaScript -->
+        var cards = document.querySelectorAll('.card'); // Selecciona todos los elementos con la clase 'card' y los almacena en la variable 'cards'
+        cards.forEach(function(card){ // Itera sobre cada tarjeta
+            card.addEventListener('click', function(){ // Añade un evento de clic a cada tarjeta
+                card.classList.toggle('flipped'); // Alterna la clase 'flipped' en la tarjeta al hacer clic en ella
+            });
+        });
+    </script> <!-- Fin del script de JavaScript -->
+
+</body> <!-- Fin del cuerpo del documento HTML -->
+</html> <!-- Fin del documento HTML -->
